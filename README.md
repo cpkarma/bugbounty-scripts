@@ -1,5 +1,5 @@
 # bugbounty-scripts
 
-Cors POC Page: cors.html
-CSRF POC Page: csrf.html
-Tabnabbing POC: tab.html
+Cors POC Page: cors.html  
+CSRF POC Page: csrf.html  
+Tabnabbing POC: tabnapping.html
